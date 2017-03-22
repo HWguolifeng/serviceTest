@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">serviceTest</string>
+    <string name="bindService">Bind</string>
+    <string name="unBindService">unBInd</string>
 </resources>
