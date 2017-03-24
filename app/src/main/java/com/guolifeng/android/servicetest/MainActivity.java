@@ -80,7 +80,7 @@ public class MainActivity extends Activity
 
                     break;
                 case R.id.get_status:
-                    getCount();
+                    startService(intent);
                     break;
                 default:
                     break;

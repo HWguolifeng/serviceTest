@@ -80,4 +80,11 @@ public class BindService extends Service
         Log.i(TAG, "onStartCommand: ");
         return super.onStartCommand(intent, flags, startId);
     }
+
+    @Override
+    public void onRebind(Intent intent)
+    {
+        super.onRebind(intent);
+        Log.i(TAG, "onRebind: ");
+    }
 }
