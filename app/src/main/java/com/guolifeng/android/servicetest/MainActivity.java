@@ -26,7 +26,7 @@ public class MainActivity extends Activity
         public void onServiceConnected(ComponentName name, IBinder service)
         {
             Log.i(TAG, "onServiceConnected: ");
-            myBinder = (BindService.MyBinder) service;
+//            myBinder = (BindService.MyBinder) service;
         }
 
         @Override
@@ -64,7 +64,7 @@ public class MainActivity extends Activity
         @Override
         public void onClick(View v)
         {
-            Intent intent = new Intent(context, BindService.class);
+            Intent intent = new Intent(context, MyIntentService.class);
             switch (v.getId())
             {
                 case R.id.bind:
